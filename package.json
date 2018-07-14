@@ -1,0 +1,7 @@
+{
+  "name": "story-point-estimator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Robert Shaw <r.shaw1@yahoo.com>",
+  "license": "MIT"
+}

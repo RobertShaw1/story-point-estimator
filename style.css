@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light);
+
+  /* COLOR VARIABLES */
+  --trim: #fcfa70;
+  --dark: #375a7f;
+  --pale: #4d7cae;
+  --light: #6a99cb;
+}
+
+h1 {
+  position: fixed;
+  top: 3rem;
+  border: 2px solid var(--trim);
+  border-radius: 1.5rem;
+  padding: 10px 20px;
+  font-size: 3.5rem;
+  color: var(--dark);
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 1.8rem;
+  margin-bottom: 5rem;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+/* IDS */
+#factor {
+  font-family: cursive;
+  font-size: 3rem;
+  padding-left: 1rem;
+  text-decoration: underline;
+  color: var(--dark);
+}
+
+#point {
+  color: var(--trim);
+}
+
+#help {
+  font-size: 3rem;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 180px;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  outline: none;
+  border: 2px solid var(--trim);
+  background-color: transparent;
+  color: var(--trim);
+  font-family: monster;
+}
+
+/* CLASSES */
+.btn-container {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  font-size: 2rem;
+  padding: .3rem 2rem;
+  margin: 0rem 1rem;
+  border-radius: .3rem;
+  background-color: rgba(200,210,210,.2);
+  color: var(--dark);
+  border: none;
+  outline: none;
+}
+
+.btn:hover {
+  background-color: var(--pale);
+  color: var(--trim);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 8px 8px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.19);
+}
