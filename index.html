@@ -9,7 +9,7 @@
   </head>
   <body>
     <h1>Story <span id="point">Point</span> Estimator</h1>
-    <p>Select the level of<span id="factor"> Uncertainty</span></p>
+    <p id="prompt">Select the level of<span id="factor"> Uncertainty</span></p>
     <div class="btn-container">
       <button class="btn" type="submit">Small</button>
       <button class="btn" type="submit">Medium</button>
@@ -17,6 +17,15 @@
     </div>
     <label class="help-button" for="help" aria-label="Help Button">?</label>
     <input role="button" type="checkbox" name="help" id="help">
-    <div class="help-modal" role="presentation"></div>
+    <div class="help-modal" role="presentation">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>What are story points?</h2><br>
+        <p>
+          Story points are an arbitrary measure of work for completing a sprint task. They are helpful for thinking in relative terms when comparing associated tasks.
+        </p>
+      </div>
+    </div>
   </body>
 </html>
