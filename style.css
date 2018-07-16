@@ -14,7 +14,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--light);
+  /* background-color: var(--light); */
+  background-color: orange;
+  color: var(--dark);
 
   /* COLOR VARIABLES */
   --trim: #fcfa70;
@@ -106,7 +108,7 @@ h1 {
   right: 1.5rem;
   outline: none;
   border: 2px solid var(--trim);
-  background-color: transparent;
+  background-color: var(--dark);
   color: var(--trim);
   font-family: monster;
   text-align: center;
