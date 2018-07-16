@@ -106,7 +106,28 @@ function calculateStoryPoints() {
   estimator.calculateStoryPoints(state.selectedValues);
 
   state.storyPointTotal = estimator.storyPoints;
+  displayStoryPointTotal();
 }
 
 function displayStoryPointTotal() {
+  if (state.storyPointTotal) {
+    const inputs = $.getElementsByClassName('input');
+    inputs[0].style.display = 'none';
+    inputs[1].style.display = 'none';
+
+    const levelItems = $.getElementsByClassName('level-item');
+    for (let i = 0; i < levelItems.length; i++) {
+      const str = state.selectedValues[i].level;
+      const _text = `${str[0].toUpperCase()}${str.slice(1)}`;
+      levelItems[i].innerHTML = _text;
+    }
+
+    const spNum = $.getElementsByClassName('sp-num');
+    spNum[0].innerHTML = state.storyPointTotal;
+
+    const outputs = $.getElementsByClassName('output');
+    outputs[0].style.display = 'initial';
+    outputs[1].style.display = 'initial';
+
+  }
 }
