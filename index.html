@@ -8,13 +8,41 @@
     <title>Story Point Estimator</title>
   </head>
   <body>
+    <!-- HEADER -->
     <h1>Story <span id="point">Point</span> Estimator</h1>
-    <p id="prompt">Select the level of<span id="factor"> Uncertainty</span></p>
-    <div class="btn-container" id="levels">
+
+    <!-- USER INPUT -->
+    <p id="prompt" class="input">Select the level of<span id="factor"> Uncertainty</span></p>
+    <div id="levels" class="input btn-container">
       <button class="btn" type="submit" title="small">Small</button>
       <button class="btn" type="submit" title="medium">Medium</button>
       <button class="btn" type="submit" title="large">Large</button>
     </div>
+
+    <!-- OUTPUT -->
+    <section id="selection-container" class="output">
+      <div class="factor-row">
+        <span>
+          <div class="factor-item">Complexity</div>
+          <div class="level-item">?</div>
+        </span>
+        <span>
+          <div class="factor-item">Effort</div>
+          <div class="level-item">?</div>
+        </span>
+        <span>
+          <div class="factor-item">Uncertainty</div>
+          <div class="level-item">?</div>
+        </span>
+      </div>
+    </section>
+
+    <div class="output">
+      <p class="sp-num">?</p>
+      <p class="sp-text">Story Points</p>
+    </div>
+
+    <!-- HELP -->
     <label class="help-button" for="help" aria-label="Help Button">?</label>
     <input role="button" type="checkbox" name="help" id="help">
     <div class="help-modal" role="presentation">
@@ -23,7 +51,8 @@
         <span class="close">&times;</span>
         <h2>What are story points?</h2><br>
         <p>
-          Story points are an arbitrary measure of work for completing a sprint task. They are helpful for thinking in relative terms when comparing associated tasks.
+          Story points are an arbitrary measure of work for completing a sprint task.<br>
+          They are helpful for thinking in relative terms when comparing associated tasks.
         </p>
       </div>
     </div>

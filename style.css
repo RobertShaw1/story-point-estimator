@@ -61,6 +61,11 @@ h1 {
   letter-spacing: 2px;
 }
 
+#selection-container {
+  margin-bottom: 5rem;
+  width: 50%
+}
+
 /* CLASSES */
 .btn-container {
   width: 50%;
@@ -132,6 +137,39 @@ h1 {
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
+}
+
+.factor-row {
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.factor-row > span {
+  margin: 0rem 2rem;
+}
+
+.factor-item {
+  text-decoration: underline;
+}
+
+.level-item {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.sp-num {
+  color: var(--trim);
+  font-size: 7rem;
+  text-align: center;
+}
+
+.sp-text {
+  font-size: 3rem;
+}
+
+.output {
+  display: none;
 }
 
 /* Modal Content/Box */
