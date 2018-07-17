@@ -25,7 +25,7 @@ body {
   --light: #6a99cb;
 }
 
-h1 {
+.header {
   position: fixed;
   top: 3rem;
   border: 2px solid var(--trim);
@@ -143,6 +143,7 @@ h1 {
 
 .factor-row {
   font-size: 2rem;
+  text-align: center;
   display: flex;
   justify-content: space-around;
 }
@@ -209,4 +210,37 @@ h1 {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    font-size: larger;
+  }
+
+  #prompt {
+    font-size: inherit;
+    margin-bottom: 3rem;
+  }
+
+  #factor {
+    font-size: 1.6rem;
+  }
+
+  .btn-container {
+    flex-direction: column;
+  }
+
+  .btn {
+    margin: 1rem 1rem;
+  }
+
+  .factor-row {
+    font-size: 1rem;
+    justify-content: space-evenly;
+  }
+
+  .factor-row > span {
+    margin: 0rem 1rem;
+  }
+
 }
