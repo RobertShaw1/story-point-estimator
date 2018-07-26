@@ -56,13 +56,13 @@ body {
 
 #prompt {
   font-size: 1.8rem;
-  margin-bottom: 5rem;
+  margin: 2rem auto 5rem auto;
   color: #fff;
   letter-spacing: 2px;
 }
 
 #selection-container {
-  margin-bottom: 5rem;
+  margin: 2rem auto 5rem auto;
   width: 50%
 }
 
