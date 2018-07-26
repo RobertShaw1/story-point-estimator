@@ -12,7 +12,6 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   /* background-color: var(--light); */
   background-color: orange;
@@ -26,8 +25,7 @@ body {
 }
 
 .header {
-  position: fixed;
-  top: 3rem;
+  margin: 3rem auto;
   border: 2px solid var(--trim);
   border-radius: 1.5rem;
   padding: 10px 20px;
@@ -214,12 +212,12 @@ body {
 
 @media screen and (max-width: 600px) {
   .header {
-    font-size: larger;
+    font-size: x-large;
   }
 
   #prompt {
     font-size: inherit;
-    margin-bottom: 3rem;
+    margin: 2.5rem auto;
   }
 
   #factor {
