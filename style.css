@@ -225,6 +225,7 @@ body {
   }
 
   #selection-container {
+    margin: 1rem auto 4rem auto;
     width: 100%
   }
 
