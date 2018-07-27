@@ -237,6 +237,13 @@ body {
     margin: 1rem 1rem;
   }
 
+  .btn:hover {
+    background-color: rgba(200,210,210,.2);
+    color: var(--dark);
+    transform: none;
+    box-shadow: none;
+  }
+
   .factor-row {
     font-size: 1rem;
     justify-content: space-evenly;
